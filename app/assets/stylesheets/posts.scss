@@ -3,32 +3,42 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
 #posts-home{
+	    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+#GL{
 	
-	display: flex;
-	justify-content: space-evenly;
-	padding-top: 25px;
+	box-shadow: 11px 28px 82px 19px #21b4ec;
+    /* width: 15vh; */
+    /* background-color: white; */
+    flex-basis: 8vw;
+}
+#FL{
+	width:8vw;
+	box-shadow: 40px 14px 40px 23px #21b4ec;
+}
+    
+    #post_content{
+        width: 95%;
+    /* height: 34%; */
+    height: 14vh;
+    }
+.deewar-posts{
+    box-shadow: 15px 0px 67px 11px #21b4ec;
+   flex-basis: 78vw;
 
-	.deewar-posts{
-		width: 50%;
-		border-right: 1px dashed #007effe0;
-		border-left: 1px dashed #007effe0;
+.posts-list{
+	    list-style-type: none;
+}
+   .posts-list-item{
+   padding-left: 28px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    box-shadow: 0px 3px 7px 1px #a7afae;}
+   
 
-		.new-post-form{
-			display: flex;
-			justify-content: center;
-			form{
-			display: flex;
-				flex-direction: column;
-			}
-			
-		}
-
-		.posts-list{
-			
-		}
-	}
+   }
 
 }
 

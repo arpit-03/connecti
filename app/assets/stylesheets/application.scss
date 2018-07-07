@@ -15,36 +15,43 @@
  */
 
 body{
+	
 	margin: 0;
 
 	#common-header{
-		display: flex;
-		justify-content: space-around;
-		box-shadow: 1px 1px 1px 1px lightgrey;
-
-
-		.logo{
-			width: 40%;
-			text-align: left;
-		}
-
-		.auth-info-links{
-			width: 40%;
-			text-align: right;
-
-			display: flex;
-			justify-content: flex-end;
-
-			p:first-child{
-				margin-right: 15px;
-			}
-		}
-
-	}
-
-
+	display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 4px 32px 9px lightgrey;
+        background-color: #2e4354	;
 }
 
+
+
+	.logo{
+	width: 40%;
+    text-align: left;
+	}
+
+.auth-info-links{
+width: 40%;
+	    display: flex;
+    justify-content: flex-end;
+
+p:first-child{
+
+	margin-right:15px 
+}
+#email_id{
+	font-family: sans-serif;
+    color: #96a4ad;	
+}
+.l1{
+a{
+	text-decoration: none;
+    color: #e27a7a;
+}}
+}
+}
 
 
 

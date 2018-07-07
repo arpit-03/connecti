@@ -1,13 +1,14 @@
 <main id="posts-home">
 
-	<div>Group Links</div>
+	<div id="GL">Group Links</div>
 
 	<div class="deewar-posts">
 		<div class="new-post-form">
 			<% if user_signed_in? %>
 			<%= form_for @post do |f| %>
-				<%= f.label :content %>
+				
 				<%= f.text_area :content %>
+				<br>
 
 				<%= f.submit %>
 			<% end %>
@@ -17,10 +18,10 @@
 		<div >
 			<ul class="posts-list">
 				<% @posts.reverse.each do |post| %>
-				<li>
+				<li class="posts-list-item">
 					<div>
 
-						<p><%= post.content %></p>
+						<h3><p><%= post.content %></p></h3>
 						<p><%= post.user.email %></p>
 						<% if user_signed_in? && post.user_id ==  current_user.id %>
 						<p><%= link_to "Delete", destroy_post_path(post.id), method: :delete %></p>
@@ -48,7 +49,7 @@
 							<%= form_for @comment do |f| %>
 								<%= f.hidden_field :post_id, value: post.id %>
 
-								<%= f.label :content %>
+								
 								<%= f.text_area :content %>
 
 								<%= f.submit %>
@@ -85,7 +86,7 @@
 	</div>
 
 
-	<div>Friends</div>
+	<div id="FL">Friends</div>
 
 </main>
 
